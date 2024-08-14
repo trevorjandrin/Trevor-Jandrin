@@ -1,0 +1,1 @@
+The purpose of this respitory is to show off my general knowledge of programing languages. Please enjoy browsing around in these files. NOTE: Some projects may not be completly finished. They are here to demonstarte current work.

@@ -5,25 +5,56 @@
         <title>Trevor</title>
     </head>
     <style>
-        div, footer, nav, article
-        {
-            border: 1px solid blue;
-        }
-        html,body,#border,#body
-        {
-            height: 100%;
-        }
+        body{margin:0px;padding:0px;}
         #border
         {
-        
+            background-color: blue;
         }
         #body
         {
+            min-height: 100vh;
             margin:auto;
-            padding: 0px 10px 0px;
             width:90%; 
             display: flex; 
-            flex-direction: column;         
+            flex-direction: column;  
+            background-color: lightblue;       
+        }
+        #media
+        {
+            position: fixed;
+            left: 95%;
+            top: 40%;
+            height: 20%;
+            width: 5%;
+            align-content: center;
+        }
+        #media ul
+        {
+            list-style-type: none;
+            padding:0px;
+            margin-left: 0px;
+        }
+        #media li
+        {
+            text-align: center;
+        }
+        #media img
+        {
+            border-radius: 100px;
+            height: 80%;
+            width: 80%;
+
+        }  
+        #header
+        {
+            display:flex;
+            flex-direction: row;
+            margin: 0px 10px 0px;
+        }
+        #header_Content
+        {
+            width: 100%;
+            text-align: center;
         }
         #trevor_Image
         {
@@ -32,62 +63,56 @@
         #trevor_Image img
         {
             border-radius: 50px;
+           
         }
-        
-        #header_Content
+        nav
         {
+            background-color: beige;
             width: 100%;
-            text-align: center;
-        }
-        #header
-        {
-            display:flex;
-            flex-direction: row;
         }
         nav ul
         {
             list-style-type: none;
             margin:10px;
-            border: 1px solid black;
+          
             display:flex;  
             justify-content: center;                    
-        }
-        footer
-        {
-            margin-top:auto;
-            text-align: center;
-        }
-        article
-        {
-            height: 1000px;
-        }
-        footer p
-        {
-            display: inline;
         }
         nav li
         {
             padding:0px 10px 0px;
         }
-        #media
+        main
         {
-            position: fixed;
-            left: 95%;
+            margin: 0px 10px 0px;
+           height: 100%;
+           display: grid;
+           grid-template-rows: auto auto auto;
+        }
+        article
+        {
+            border:1px solid black;
+            
+            overflow:auto;
+        }
+        article img
+        {
+            float:left;
+            height: 100px;
+            width: 100px;
+        }
 
-            top: 50%;
-        }
-        #media ul
+        footer
         {
-            list-style-type: none;
-            padding:0px;
-            margin:0px;
-        }
-        #media img
+            margin-top:auto;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+        }     
+        footer p
         {
-            border-radius: 50px;
-            height:35px;
-            width:35px;
-        }
+            display: inline;
+        }   
     </style>
     <body>
         <div id="border">
@@ -110,23 +135,27 @@
                         <li>content</li>
                     </ul>
                 </nav>              
-                <article>
-                    <div>
+                <main>
+                    <article>
                         <h3>Word</h3>
-                        <p></p>
-                        <img src="" alt="picture">
-                    </div>
-                    <div>
+                        
+                        <img   src="images/new plastics.jpg" alt="picture">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>   
+                    </article>
+                    <article>
                         <h3>Word</h3>
-                        <p></p>
-                        <img src="" alt="picture">
-                    </div>
-                    <div>
+                        <img src="images/new plastics.jpg" alt="picture">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>   
+                    </article>
+                    <article>
                         <h3>Word</h3>
-                        <p></p>
-                        <img src="" alt="picture">
-                    </div>
-                </article>
+                        <img src="images/new plastics.jpg" alt="picture">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                             Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>   
+                    </article>
+                </main>
                 <footer>
                     <p>Created by: Trevor Jandrin</p>
                     <p style="margin-left: 20px;">Date: 8/15/2024</p>

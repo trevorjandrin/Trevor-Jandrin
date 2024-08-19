@@ -228,3 +228,6 @@ a:active {
 #img_Mail{ content: url("../Images/Mail.png");}
 #img_Phone{ content: url("../Images/Phone.png");}
 #img_Trevor{ content: url("../Images/python.jpg");}
+
+#h2{display:block; width: 50px;}
+#skill_right{float:left; height: 100px; width: 100px;}

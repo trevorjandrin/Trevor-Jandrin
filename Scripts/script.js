@@ -11,6 +11,8 @@ window.onload=function()
         width=width+"px";
         drop_content[i].style.minWidth=width;
     }
+    var Date=document.getElementById("Date");
+    Date.innerHTML="Date: 8/19/2024";
 };
 
     window.onscroll=function(){ 

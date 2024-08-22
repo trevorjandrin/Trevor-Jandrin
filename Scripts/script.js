@@ -1,7 +1,7 @@
 
 window.onload=function()
 {
-    
+
     var drop_content=document.getElementsByClassName("drop_content");
     var dropdown=document.getElementsByClassName("dropdown");
     
@@ -13,6 +13,13 @@ window.onload=function()
     }
     var Date=document.getElementById("Date");
     Date.innerHTML="Date: 8/19/2024";
+    var linkedin=document.getElementById("img_Linkedin");
+    var mail=document.getElementById("img_Mail");
+    var phone=document.getElementById("img_Phone");
+    linkedin.alt="Picture of Linkedin logo.";
+    mail.alt="Picture of Mail";
+    phone.alt="Picture of a phone";
+    
 };
 
     window.onscroll=function(){ 
@@ -20,17 +27,3 @@ window.onload=function()
     var scroll=window.scrollY;
     image.style.rotate=scroll*2+"deg";
     };
-function display_none()
-{
-var navigation=document.getElementsByTagName("nav");
-navigation[0].style.display="none";
-var footer=document.getElementsByTagName("footer");
-footer[0].style.display="block";
-}
-function display_nav()
-{
-var navigation=document.getElementsByTagName("nav");
-var footer=document.getElementsByTagName("footer");
-footer[0].style.display="none";
-navigation[0].style.display="block";
-}

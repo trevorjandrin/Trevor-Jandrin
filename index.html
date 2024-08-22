@@ -1,59 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Trevor</title>
-		<link rel="stylesheet" href="Style_Sheets/css.css">
-        <script src="Scripts/script.js"></script>
-    </head>
-   
-    <body>
-        <div id="border">
-            <div id="body">
-                <div id="media">
-                    <ul>
-                        <li><a href=""><img id="img_Linkedin"  source="https://www.linkedin.com"  alt="Picture of Linkedin Logo"></a></li>
-                        <li><a href=""><img id="img_Mail"  source="https://support.apple.com/mail"  alt="Picture of mail logo"></a></li>
-                        <li><a href=""><img id="img_Phone"  source="https://www.flaticon.com/free-icon/phone_8748459"  alt="picture"></a></li>
-                    </ul>
-                </div>
-                 
-                <div id="header">
-                    <div id="phone_nav">
-                        <input id="down_up" type="checkbox">
-                        <div onclick="display_nav()" id="menu_image" for="down_up">
-                            <div id="top"></div>
-                            <div id="middle"></div>
-                            <div id="bottom"></div>
-                        </div>
+   <head>
+      <meta charset="utf-8">
+      <title>Trevor</title>
+      <link rel="stylesheet" href="Style_Sheets/css.css">
+      <script src="Scripts/script.js"></script>
+   </head>
+   <body>
+      <div id="border">
+         <div id="body">
+            <div id="media">
+               <ul>
+                  <li><a href=""><img id="img_Linkedin"  source="www.linkedin.com"  ></a></li>
+                  <li><a href=""><img id="img_Mail"  source="support.apple.com/mail" ></a></li>
+                  <li><a href=""><img id="img_Phone"  source="www.flaticon.com/free-icon/phone_8748459" ></a></li>
+               </ul>
+               <!--alts are in javascript due to issues in some browsers-->
+            </div>
+            
+            <div id="header">
+               <div id="phone_nav">
+                <label for="open_nav">
+                    <div  id="menu_image">
+                        <div id="top"></div>
+                        <div id="middle"></div>
+                        <div id="bottom"></div>
                     </div>
-                    <div id="trevor_Image"><a href="https://trevorjandrin.github.io/Trevor-Jandrin/"><img id="img_Trevor"  height="150px" width="150px"   alt="picture"></a></div>
-                    <div id="header_Content"><h1>Trevor's Webpage</h1></div>
-                </div>  
-                               
-                <nav>
-                    <ul>
-                        <li onclick="display_none()" id="exit_nav"><div>X</div></li>
-                        <li><a href="https://trevorjandrin.github.io/Trevor-Jandrin/">HOME</a></li>
-                        <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/E/Prototype/skills_prototype.html">EMPLOYMENT</a></li>
-                        <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Skills/Prototype/skills_prototype.html">EDUCATION</a></li>
-                        <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/About_Me/About_Me.html">ABOUT ME</a></li>
-                        <li class="dropdown">
-                            <button>SKILLS / PROJECTS</button>
-                            <div class="drop_content">
-                            <ul>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">WEBSITE CODING</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">SQL</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">C#</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">C</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Ruby/Ruby.html">RUBY</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/PowerShell/PowerShell.html">POWERSHELL</a></li>
-                                <li><a href="//https://trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">Prototype</a></li>
-                            </ul>
-                        </div>
-                        </li>
+                </label>
+                  
+               </div>
+               <div id="trevor_Image"><a href="trevorjandrin.github.io/Trevor-Jandrin/"><img id="img_Trevor"  height="150px" width="150px"   alt="picture"></a></div>
+               <div id="header_Content">
+                  <h1>Trevor's Webpage</h1>
+               </div>
+            </div>
+            <input id="open_nav" type="checkbox">
+            <nav for="open_nav">
+               <ul>
+                  <li id="exit_nav">
+                    <label for="open_nav"><div>X</div></label> 
+                  </li>
+                  <li><a href="trevorjandrin.github.io/Trevor-Jandrin/">HOME</a></li>
+                  <li><a href="trevorjandrin.github.io/Trevor-Jandrin/E/Prototype/skills_prototype.html">EMPLOYMENT</a></li>
+                  <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Skills/Prototype/skills_prototype.html">EDUCATION</a></li>
+                  <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/About_Me/About_Me.html">ABOUT ME</a></li>
+                  <li class="dropdown" >
+                     <input type="checkbox" id="dropdown_skill" class="dropdown_checkbox" >
+                     <label for="dropdown_skill">
+                        <p  class="dropdown_a">SKILLS / PROJECTS
+                           <span class="dropdown_open">V</span>
+                           <span class="dropdown_close">></span>
+                        </p>
+                     </label>
+                     <ul class="drop_content" for="dropdown_skill">
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">WEBSITE CODING</a></li>
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">SQL</a></li>
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">C#</a></li>
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Prototype/skills_prototype.html">C</a></li>
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/Ruby/Ruby.html">RUBY</a></li>
+                        <li><a href="trevorjandrin.github.io/Trevor-Jandrin/Pages/Skills/PowerShell/PowerShell.html">POWERSHELL</a></li>
+                     </ul>
+                  </li>
+                  <li class="dropdown" id="contact">
+                    <input type="checkbox" id="dropdown_contact" class="dropdown_checkbox">
+                    <label for="dropdown_contact">
+                       <p  class="dropdown_a">CONTACT
+                           <span class="dropdown_open">V</span>
+                           <span class="dropdown_close">></span>
+                       </p>
+                    </label>
+                    <ul class="drop_content" for="hey">
+                       <li><a href="">LINKEDIN</a></li>
+                       <li><a href="">MAIL</a></li>
+                       <li><a href="">PHONE</a></li>
                     </ul>
-                </nav>           
+                 </li>
+               </ul>
+            </nav>         
                 <main>
                     <article>
                         <h3>CURRENT PROJECTS</h3>

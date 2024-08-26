@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+
+img{border: solid black 2px;}
+.c{
+    width: 100%; 
+    height: 100vh;
+    border: solid black 2px;
+    text-align: center;
+    overflow: hidden;}
+.ca{
+    position: relative; 
+    min-width: 100%;
+    height: 120vh; 
+    animation: down 12s infinite;
+    left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+    
+}
+@keyframes down
+{
+0%{bottom:0%;}
+50%{bottom:20%;}
+100%{bottom:0%;}
+}
+body{padding:0;margin:0;}
+
+</style>
+</head>
+<body>
+    <div class="c"><img class="ca"src="test.jpg" alt="Paris" ></div>
+<div id="yes">
+
+    <img class="a" src="test.png" alt="Paris" width="600px" height="300px">
+</div>
+    
+    
+    <div>
+        <img class="b" src="test.png" alt="Paris" width="400px" height="400px">
+    </div>
+    <img src="test.jpg" alt="Paris" >
+ 
+    
+    <p>Note: The object-position and object-fit properties are not supported in Internet Explorer/Edge 15 or earlier.</p>
+    
+</body>
+</html>
